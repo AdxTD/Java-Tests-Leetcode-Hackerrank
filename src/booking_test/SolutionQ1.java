@@ -61,7 +61,7 @@ public static List<String> autoCorrectSuggestions(String input, List<String> des
             })
                 .collect(toList());
     
-            List<String> result = Result.autoCorrectSuggestions(input, destinations);
+            List<String> result = Solution.autoCorrectSuggestions(input, destinations);
     
             bufferedWriter.write(
                 result.stream()
@@ -72,4 +72,6 @@ public static List<String> autoCorrectSuggestions(String input, List<String> des
             bufferedReader.close();
             bufferedWriter.close();
         }
+    }
 }
+
